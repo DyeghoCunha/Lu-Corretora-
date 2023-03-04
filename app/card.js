@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const nextBtn = carousel.querySelector("#nextBtn");
 
     // Contador de imagem e tamanho da imagem
-    let counter = 1;
+    let counter = 0;
     const size = carouselImages[0].clientWidth;
 
     // Ajustando a posição inicial do carrossel
@@ -39,18 +39,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Evento para quando a transição terminar, ajustar a posição do carrossel
     carouselSlide.addEventListener("transitionend", () => {
-      if (carouselImages[counter].id === "lastClone") {
+         if (carouselImages[counter].id === "firstClone") {
         carouselSlide.style.transition = "none";
-        counter = carouselImages.length - 2;
-        carouselSlide.style.transform =
-          "translateX(" + -size * counter + "px)";
-      }
-      if (carouselImages[counter].id === "firstClone") {
-        carouselSlide.style.transition = "none";
-        counter = carouselImages.length - counter;
+        counter = carouselImages.length - counter -1;
         carouselSlide.style.transform =
           "translateX(" + -size * counter + "px)";
       }
     });
   });
 });
+
+
+
