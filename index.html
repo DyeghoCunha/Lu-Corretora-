@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style/style.css">
-    <link rel="stylesheet" href="./style/carrosel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="./style/carrosel.css"> -->
     <link rel="stylesheet" href="./style/cards.css">
     
 
@@ -49,23 +51,32 @@
 
 <section class="cartoes">
 
-    <div class="card">
-        <div class="carousel">
-          <div class="carousel-slide">
-            <img src="./img/img1.jpg" alt="Imagem 1">
-            <img src="./img/img2.jpg" alt="Imagem 2">
-            <img src="./img/img3.jpg" alt="Imagem 3">
-            <img src="./img/img4.jpg" alt="Imagem 4">
-            <img src="./img/img1.jpg" alt="Imagem 5">
-            <img src="./img/img2.jpg" alt="Imagem 1" id="firstClone">
-            <img src="./img/img3.jpg" alt="Imagem 5" id="lastClone">
-          </div>
-          <button id="prevBtn">&#10094;</button>
-          <button id="nextBtn">&#10095;</button>
+    <div class="card-container">
+        <div class="carousel-card">
+          <a href="#" class="carousel-card-slide">
+            <img src="./img/1.png" alt="Imagem 1" >
+            <img src="./img/2.png"  alt="Imagem 2">
+            <img src="./img/3.png"  alt="Imagem 3">
+            <img src="./img/4.png"  alt="Imagem 4">
+            <img src="./img/3.png"  alt="Imagem 5">
+            <img src="./img/1.png"  alt="Imagem 1" id="firstClone">
+            <img src="./img/3.png"  alt="Imagem 5" id="lastClone">
+          </a>
+          <button id="prevBtn"><i class="fa-solid fa-caret-left"></i></button>
+          <button id="nextBtn"><i class="fa-solid fa-caret-right"></i></button>
         </div>
-        <h2>Título do Card</h2>
-        <p>Descrição do Card</p>
+        <h2 class="titulo-imovel">Apartamento Super Caro</h2>
+        <ul class="lista-caracteristicas">
+            <li>4 <i class="fa-solid fa-bed"></i></li>
+            <li>2 <i class="fa-solid fa-bath"></i></li>
+            <li>2 <i class="fa-solid fa-car"></i></li>
+            <li>2 <i class="fa-solid fa-kitchen-set"></i></li>
+            <li>2 <i class="fa-solid fa-person-swimming"></i></li>
+            <!-- <li>2 </li> -->
+        </ul>
+        <p class="descricao-apartamento">Apartamento foda pra caralho que minha esposa vai vender e ficar rycah</p>
       </div>
+
       
       
   
@@ -117,6 +128,6 @@
     <script src="./app/card.js"></script>
 
    <script src="./app/main.js"></script>
-   <script src="./app/carrossel.js"></script>
+   <!-- <script src="./app/carrossel.js"></script> -->
 </body>
 </html>

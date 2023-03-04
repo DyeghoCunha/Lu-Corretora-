@@ -74,3 +74,13 @@ nav ul li a {
 }
 
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap');
+@import url(./cards.css);
+
+:root{
+	--fonte-primario:'Montserrat', sans-serif;
+	--cor-fonte-primaria:#bd3888;
+}
+*{
+	
+}

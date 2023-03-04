@@ -1,55 +1,125 @@
-.card {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap');
+
+*{
+    /* color: var(--cor-fonte-primaria); */
+}
+
+
+
+.card-container {
     display: inline-block;
-    width: 250px;
+    width: 300px;
     margin: 20px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     border-radius: 10px;
-    padding: 10px;
+    background-color: #f0f0f0;
+   
+    
+    box-shadow: 10px 10px 20px #cbced1, -10px -10px 20px #ffffff;
+    
   }
   
-  .carousel {
+  .carousel-card {
     position: relative;
     width: 100%;
     overflow: hidden;
-  }
-  
-  .carousel-slide {
+}
+
+.carousel-card-slide {
     display: flex;
     width: calc(100% * 7);
-  }
-  
-  .carousel-slide img {
+}
+
+.carousel-card-slide img {
     width: 100%;
-    height: auto;
+    height: 300px;
+    border-radius: 10px 10px 0 0 ;
+    
   }
   
   #prevBtn,
   #nextBtn {
+    color: #bd38885e;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
     width: 40px;
-    height: 40px;
-    background-color: rgba(255, 255, 255, 0.7);
-    border: none;
-    border-radius: 50%;
-    color: black;
+    height: 40px; 
     font-size: 20px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    /* transition: background-color 0.3s; */
+
+ 
+        background-color: rgba(255, 255, 255, 0.2);
+        border: none;
+        border-radius: 20px;
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(2px);
+       
+        font-weight: bold;
+        padding: 10px 10px;
+        /* transition: transform 0.3s ease-in-out;   */
   }
+
+  /* Definindo a animação pulse */
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+ 
   
   #prevBtn:hover,
   #nextBtn:hover {
     background-color: rgba(0, 0, 0, 0.5);
-    color: white;
+    box-shadow: 0 12px 32px 0 rgba(31, 38, 135, 0.57);
+
+    animation-name: pulse;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    
   }
   
   #prevBtn {
-    left: 10px;
+    left: 5px;
   }
   
   #nextBtn {
-    right: 10px;
+    right: 5px;
   }
   
+
+  .lista-caracteristicas{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    padding: 3px 10px;
+    color: var(--cor-fonte-primaria);
+  }
+
+  .titulo-imovel{
+    font-family: var(--fonte-primario);
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    margin: 10px 0;
+    color: var(--cor-fonte-primaria);
+    
+    
+  }
+.descricao-apartamento{
+    font-family: var(--fonte-primario);
+    font-size: 1em;
+    font-weight: 300;
+    text-align: center;
+    margin: 10px 5px;
+    color: var(--cor-fonte-primaria);
+}
