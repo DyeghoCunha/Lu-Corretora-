@@ -1,0 +1,55 @@
+.card {
+    display: inline-block;
+    width: 250px;
+    margin: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  .carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .carousel-slide {
+    display: flex;
+    width: calc(100% * 7);
+  }
+  
+  .carousel-slide img {
+    width: 100%;
+    height: auto;
+  }
+  
+  #prevBtn,
+  #nextBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    border-radius: 50%;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #prevBtn:hover,
+  #nextBtn:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+  }
+  
+  #prevBtn {
+    left: 10px;
+  }
+  
+  #nextBtn {
+    right: 10px;
+  }
+  
