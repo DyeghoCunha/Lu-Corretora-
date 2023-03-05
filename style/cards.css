@@ -9,7 +9,7 @@
     flex-wrap: nowrap;
     justify-content: space-between;
 
-    background-color: aquamarine;
+    background-color: rgb(255, 255, 255);
     margin: 100px 0 ;
     z-index: 0;
 }
