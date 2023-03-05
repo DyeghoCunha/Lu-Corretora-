@@ -21,7 +21,7 @@
     margin: 20px;
     /* border: 1px solid black; */
     border-radius: 10px;
-    background-color: #f0f0f0;
+    background-color: #ffffff;
    
     
     box-shadow: 10px 10px 20px #cbced1, -10px -10px 20px #ffffff;
@@ -109,9 +109,13 @@
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
-
     padding: 3px 10px;
     color: var(--cor-fonte-primaria);
+  }
+  .lista-card-itens{
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .titulo-imovel{
@@ -132,6 +136,17 @@
     margin: 10px 5px;
     color: var(--cor-fonte-primaria);
 }
+
+.icone-imovel{
+	width: 25px;
+	height: 25px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
 
 @media only screen and (max-width: 768px) {
 .cartoes{
