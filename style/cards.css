@@ -45,6 +45,17 @@
     border-radius: 10px 10px 0 0 ;
         
   }
+
+  
+
+  .imagem-botao{
+    position: relative;
+    left:-10px;
+    top:-10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+  }
   
   #prevBtn,
   #nextBtn {
