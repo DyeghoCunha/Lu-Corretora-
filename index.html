@@ -17,20 +17,35 @@
 
 <!----------------------------- INCIO da NavBar  -->
         <header>
-            <nav>
-                <h1><a href="#">Logo</a></h1>
-                <ul class="navbar" id="navLinks">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-                <div id="hamburger" onclick="toggleMenu()">
-                    <div></div>
-                    <div></div>
-                    <div></div>
+            <div class="nav-container">
+                <h1 class="nav-logo"><a href="#"><i class="fa-solid fa-crow"></i></a></h1>
+                
+              <ul class="nav-lista-container" id="navLinks">
+                    
+                  <ul class="nav-lista"><a href="#">Home</a>
+                      <li class="nav-lista-item"><a href="#">item</a></li>
+                      <li class="nav-lista-item"><a href="#">item</a></li>
+                      <li class="nav-lista-item"><a href="#">item</a></li>
+                  </ul>
+
+                   <ul class="nav-lista"><a href="#">Home</a>
+                      <li class="nav-lista-item"><a href="#">item</a></li>
+                      <li class="nav-lista-item"><a href="#">item</a></li>
+                      <li class="nav-lista-item"><a href="#">item</a></li>
+                  </ul>
+
+                  <ul class="nav-lista"><a href="#">Home</a>
+                    <li class="nav-lista-item"><a href="#">item</a></li>
+                    <li class="nav-lista-item"><a href="#">item</a></li>
+                    <li class="nav-lista-item"><a href="#">item</a></li>
+                  </ul>
+                   
+              </ul>
+                <div class="hamburger-container" id="hamburger" onclick="toggleMenu()">
+                    <div class="hamburger-abre hamburger"><i class="fa-solid fa-bars"></i></div>
+                    <div class="hamburger-fecha hamburger"><i class="fa-solid fa-xmark"></i></div>
                 </div>
-            </nav>
+              </div>
         </header>
 
 <!----------------------------- FIM da NavBar  -->

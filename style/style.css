@@ -8,6 +8,20 @@
 :root{
 	--fonte-primario:'Montserrat', sans-serif;
 	--cor-fonte-primaria:#bd3888;
+	--cor-fonte-primaria-blur: #bd38885e;
+
+	--fundo-vidro: rgba(255, 255, 255, 0.2);
+	--sombra-vidro: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+
+	--fundo-vidro-hover:rgba(255, 255, 255, 0.6);
+	--sombra-vidro-hover: 0 12px 32px 0 rgba(31, 38, 135, 0.57);
+
+	
+
+
+
+
+	
 }
 *{
 	
