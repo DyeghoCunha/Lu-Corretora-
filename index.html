@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./style/style.css">
+    <!-- <link rel="stylesheet" href="./style/style.css"> -->
+    <link rel="stylesheet" href="./style/bairros.css">
    
     
 
@@ -16,7 +17,7 @@
 <body>
  
 <!----------------------------- INCIO da NavBar  -->
-        <header>
+        <!-- <header>
             <div class="nav-container">
                 <h1 class="nav-logo"><a href="#"><img class="casa" src="./img/home.gif" alt=""></a></h1>
                 
@@ -40,24 +41,37 @@
                     <li class="nav-lista-item"><a class="subtitulo-lista-nav" href="#">de Lançamento</a></li>
                     <li class="nav-lista-item"><a class="subtitulo-lista-nav" href="#">de Locação</a></li>
                   </ul>
+
+                  <ul class="social-nav">
+                    <li class="social-nav-item">
+                      <a href="" class="social-nav-link">
+                        <img class="social-nav-img" src="./img/whatsapp.png" alt=""></a></li>
+
+                    <li class="social-nav-item"><a href="" class="social-nav-link"><img class="social-nav-img" src="./img/facebook.png" alt=""></a></li>
+                    <li class="social-nav-item"><a href="" class="social-nav-link"><img class="social-nav-img" src="./img/instagram.png" alt=""></a></li>
+                  </ul>
                    
               </ul>
-                <div class="hamburger-container" id="hamburger" onclick="toggleMenu()">
+
+
+                <div class="hamburger-container" id="hamburger" >
                     <div class="hamburger-abre hamburger"><i class="fa-solid fa-bars"></i></div>
-                    <div class="hamburger-fecha hamburger"><i class="fa-solid fa-xmark"></i></div>
+                    <div class="hamburger-fecha esconde hamburger"><i class="fa-solid fa-xmark"></i></div>
                 </div>
               </div>
-        </header>
+        </header> -->
 
 <!----------------------------- FIM da NavBar  -->
 
 <!----------------------------- INCIO do Carrossel  -->
-        <!-- <div class="carousel-container">
-            <div class="carousel-slide">
-                <img src="./img/img1.jpg" alt="Image 1">
-                <img src="./img/img2.jpg" alt="Image 2">
-                <img src="./img/img3.jpg" alt="Image 3">
-                <img src="./img/img4.jpg" alt="Image 4">
+
+<!-- 
+        <div class="carousel-container">
+                <div class="carousel-slide">
+                <img src="./img/1.png" alt="Image 1">
+                <img src="./img/2.png" alt="Image 2">
+                <img src="./img/3.png" alt="Image 3">
+                                
             </div>
             <div class="carousel-nav">
                 <button onclick="prevImage()">Prev</button>
@@ -68,7 +82,7 @@
         
 <!----------------------------- INCIO dos cartões -->
 
-<section class="cartoes">
+<!-- <section class="cartoes">
 
     <div class="card-container">
         <div class="carousel-card">
@@ -90,7 +104,7 @@
             <li class="lista-card-itens" ><p>1</p><img src="./img/gif/car (1).gif" alt="" class="icone-imovel"></li>
             <li class="lista-card-itens" ><p>200m²</p><img src="./img/gif/expand.gif" class="icone-imovel"></li>
             <li class="lista-card-itens" ><p>180m²</p><img src="./img/gif/target.gif" alt="" class="icone-imovel"></i></li>
-            <!-- <li>2 </li> -->
+            
         </ul>
         <p class="descricao-apartamento">Apartamento foda pra caralho que minha esposa vai vender e ficar rycah</p>
       </div>
@@ -115,7 +129,7 @@
             <li>2 <i class="fa-solid fa-car"></i></li>
             <li><i class="fa-solid fa-vector-square"></i> 200m²</li>
             <li><i class="fa-solid fa-arrows-left-right-to-line"></i></i> 180m²</i></li>
-            <!-- <li>2 </li> -->
+            
         </ul>
         <p class="descricao-apartamento">Apartamento foda pra caralho que minha esposa vai vender e ficar rycah</p>
       </div>
@@ -140,7 +154,7 @@
             <li>2 <i class="fa-solid fa-car"></i></li>
             <li><i class="fa-solid fa-vector-square"></i> 200m²</li>
             <li><i class="fa-solid fa-arrows-left-right-to-line"></i></i> 180m²</i></li>
-            <!-- <li>2 </li> -->
+            
         </ul>
         <p class="descricao-apartamento">Apartamento foda pra caralho que minha esposa vai vender e ficar rycah</p>
       </div>
@@ -165,14 +179,37 @@
             <li>2 <i class="fa-solid fa-car"></i></li>
             <li><i class="fa-solid fa-vector-square"></i> 200m²</li>
             <li><i class="fa-solid fa-arrows-left-right-to-line"></i></i> 180m²</i></li>
-            <!-- <li>2 </li> -->
+            
         </ul>
         <p class="descricao-apartamento">Apartamento foda pra caralho que minha esposa vai vender e ficar rycah</p>
       </div>
 
-</section>
+</section> -->
 <!----------------------------- FIM dos cartões -->
 
+<!------------------Início dos Bairros --------------------->
+<section class="bairros-container">
+<div class="screen">
+  <div class="screen-image" alt=""></div>
+  <div class="screen-overlay"></div>
+</div>
+
+<div class="screen">
+  <div class="screen-image" alt=""></div>
+  <div class="screen-overlay"></div>
+</div>
+<div class="screen">
+  <div class="screen-image" alt=""></div>
+  <div class="screen-overlay"></div>
+</div>
+<div class="screen">
+  <div class="screen-image" alt=""></div>
+  <div class="screen-overlay"></div>
+</div>
+
+</section>
+
+<!-- ---------------Fim dos Bairros -->
 
 
 
@@ -183,9 +220,6 @@
 
 
 
-
-       
-        
 <!-- 
             <div class="card-container">
                 <div class="card">
@@ -214,10 +248,10 @@
                 </div>
             </div>
          -->
-    <footer> <a href="https://www.flaticon.com/free-animated-icons/real-estate" title="real estate animated icons">Real estate animated icons created by Freepik - Flaticon</a></footer>
+   <!-- <footer> <a href="https://www.flaticon.com/free-animated-icons/real-estate" title="real estate animated icons">Real estate animated icons created by Freepik - Flaticon</a></footer> -->
    <script src="./app/navbar.js"></script>
    <script src="./app/card.js"></script>
    <script src="./app/main.js"></script>
-   <script src="./app/carrossel.js"></script>
+   <!-- <script src="./app/carrossel.js"></script> -->
 </body>
 </html>

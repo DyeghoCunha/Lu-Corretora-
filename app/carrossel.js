@@ -5,6 +5,12 @@ var carouselImages = document.querySelectorAll(".carousel-slide img");
 var currentIndex = 0;
 var interval;
 
+const largura = window.innerWidth;
+const qtdImagens = carouselImages.length;
+const porcentagemImagem = 100/qtdImagens;
+
+console.log(porcentagemImagem)
+
 
 function startSlideShow() {
 	interval = setInterval(nextImage, 3000);
@@ -12,24 +18,13 @@ function startSlideShow() {
 
 function nextImage() {
 	currentIndex++;
-	if (currentIndex > carouselImages.length - 1) {
-		currentIndex = 0;
+	if (currentIndex > carouselImages.length -1 ) {
 		
+		currentIndex = 0;
 	}
-	carouselSlide.style.transform = "translateX(-" + currentIndex * 25 + "%) ";
+	//console.log(currentIndex)
+	carouselSlide.style.transform = "translateX(-" + currentIndex * porcentagemImagem + "%) ";
 }
-
-function prevImage() {
-	currentIndex--;
-	if (currentIndex < 0) {
-		currentIndex = carouselImages.length - 1;
-	}
-	carouselSlide.style.transform = "translateX(-" + currentIndex * 25 + "%) ";
-	
-}
-
-
-
 
 
 startSlideShow();

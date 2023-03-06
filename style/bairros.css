@@ -1,0 +1,124 @@
+:root{
+    --primari-rgb: 0,0,180;
+}
+
+.bairros-container{
+    display: flex;
+    flex-wrap: nowrap;
+    
+    gap: 20Px;
+}
+
+
+.screen:nth-child(1){
+    width: 200px;
+    height: 200px;
+    border:3px solid rgba(0,0,180,0.8);
+    
+    border-radius: 1rem;
+    /* background-color: rgba(0,0,180,0.15); ; */
+    position: relative;
+}
+.screen:nth-child(2){
+    width: 400px;
+    height: 400px;
+    border:3px solid rgba(0,0,180,0.8);
+   
+    border-radius: 1rem;
+    /* background-color: rgba(0,0,180,0.15); ; */
+    position: relative;
+
+}
+.screen:nth-child(3){
+    width: 200px;
+    height: 300px;
+    border:3px solid rgba(0,0,180,0.8);
+   
+    border-radius: 1rem;
+    /* background-color: rgba(0,0,180,0.15); ; */
+    position: relative;
+
+}
+.screen:nth-child(4){
+    width: 200px;
+    height: 150px;
+    border:3px solid rgba(0,0,180,0.8);
+   
+    border-radius: 1rem;
+    /* background-color: rgba(0,0,180,0.15); ; */
+    position: relative;
+    
+
+}
+
+
+
+.screen > .screen-image{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-size: 200%;
+    background-repeat: no-repeat;
+    border-radius: 1rem;
+    background-image: url(../img/bc.png);
+    animation: pan-image 15s linear infinite;
+    
+}
+
+@keyframes pan-image{
+    0%{
+        background-position: 36% 42%;
+        background-size: 200%;
+    }
+    20%{
+        background-position: 30% 35%;
+        background-size: 200%;
+    }
+
+    20.0001%{
+        background-position: 60% 85%;
+        background-size: 500%;
+    }
+
+    40%{
+        background-position: 49% 81%;
+        background-size: 500%;
+
+    }
+
+    40.0001%{
+        background-position: 80% 42%;
+        background-size: 300%;
+
+    }
+
+    60%{
+        background-position: 84% 33%;
+        background-size: 300%;
+
+    }
+    60.0001%{
+        background-position: 0% 0%;
+        background-size: 300%;
+    }
+
+    80%{
+        background-position: 15% 4%;
+        background-size: 300%;
+    }
+    80.0001%{
+        background-position: 60% 85%;
+        background-size: 300%;
+    }
+
+    100%{
+        background-position: 6% 8%;
+        background-size: 200%;
+    }
+
+
+
+
+
+}
+
