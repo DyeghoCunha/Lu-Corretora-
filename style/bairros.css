@@ -2,17 +2,24 @@
     --primari-rgb: rgba(0,0,180,0.8);
 }
 
+
 .bairros-container{
     display: grid;
+    justify-content: center;
+    align-content: center;
+    padding: 10px;
     width: 100%;
-    aspect-ratio: 1/.5;
+    height: 500px;
+    /* aspect-ratio: 1/.5; */
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: "areaA areaB areaC"
                         "areaD areaE areaF";
     
+                        margin-top: 100px;
    
     background-color: black;
+   background-position: center;
     gap: 20px;
 }
 
@@ -36,14 +43,16 @@
 .screen:nth-child(2){
     position: relative;
     grid-area: areaB;
-    width:100%;
-    height: 100%;
-    
+    width:90%;
+    height: 90%;
+    bottom: 0;
     align-self: center;
     justify-self: center;
 
     border:3px solid var(--primari-rgb);
-    
+
+    transform: translateY(-80px);
+
     border-radius: 1rem;
     background-image: url(../img/bc.png);
     animation: pan-image 20s linear infinite;
@@ -51,13 +60,15 @@
 .screen:nth-child(3){
     position: relative;
     grid-area: areaC;
-    width:100%;
-    height: 100%;
+    width:80%;
+    height: 80%;
     
     align-self: center;
     justify-self: center;
 
     border:3px solid var(--primari-rgb);
+
+    transform: translate3d(-20px, 20px, 0);
     
     border-radius: 1rem;
     background-image: url(../img/bc.png);
@@ -67,13 +78,15 @@
 .screen:nth-child(4){
     position: relative;
     grid-area: areaD;
-    width:100%;
-    height: 100%;
+    width:75%;
+    height: 75%;
     
     align-self: center;
     justify-self: center;
 
     border:3px solid var(--primari-rgb);
+
+    transform: translate3d(20px, -20px, 0);
     
     border-radius: 1rem;
     background-image: url(../img/bc.png);
@@ -83,13 +96,15 @@
 .screen:nth-child(5){
     position: relative;
     grid-area: areaE;
-    width:100%;
-    height: 100%;
+    width:95%;
+    height: 95%;
     
     align-self: center;
     justify-self: center;
 
     border:3px solid var(--primari-rgb);
+
+    transform: translate3d(0px, -60px, 0);
     
     border-radius: 1rem;
     background-image: url(../img/bc.png);
@@ -98,13 +113,15 @@
 .screen:nth-child(6){
     position: relative;
     grid-area: areaF;
-    width:100%;
-    height: 100%;
+    width:70%;
+    height: 70%;
     
     align-self: center;
     justify-self: center;
 
     border:3px solid var(--primari-rgb);
+
+    transform: translate3d(-20px, -40px, 0);
     
     border-radius: 1rem;
     background-image: url(../img/bc.png);
@@ -113,23 +130,41 @@
 
 
 
-.screen > .screen-image{
-    height: 100%;
-    width: 100%;
+
+
+
+.screen-overlay{
+    display: flex;
+    flex-direction: column;
+    
     position: absolute;
-    background-size: 200%;
-    background-repeat: no-repeat;
-    border-radius: 1rem;
-    
-    animation: pan-image 15s linear infinite;
-    
+    width: 100%;
+    height: 100%;
+    padding: 20%;
+    border: 2px red;
+
+    z-index: 100;
+
 }
+ h1{
+    margin: 0;
+    text-align: center;
+    position: relative;
+    color: black;
+    padding: 5% 20% 20% 1%;
+}
+ p {
+    margin: 0;
+    padding: 0;
+
+}
+
 
 @keyframes pan-image{
     0%{
         background-position: 36% 42%;
-        background-size: 200%;
-    }
+        background-size: 300%;
+    /* }
     20%{
         background-position: 30% 35%;
         background-size: 200%;
@@ -172,13 +207,9 @@
     }
 
     100%{
-        background-position: 6% 8%;
-        background-size: 200%;
-    }
-
-
-
-
+        background-position: 42% 36%;
+        background-size: 500%;
+    } */
 
 }
 
