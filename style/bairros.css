@@ -22,8 +22,8 @@
     overflow: hidden;
     
    
-    grid-template-columns: 200px 200px 200px;
-    grid-template-rows: 150px auto 150px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: "areaA areaB areaC"
                          "area1 area2 area3"
                          "areaD areaE areaF";
@@ -52,24 +52,25 @@
     right:0;
 }
 
-.bairros-container:nth-child(1){
+.screen:nth-child(1){
     grid-area: areaA;
     
 }
-.bairros-container:nth-child(2){
+.screen:nth-child(2){
     grid-area: areaB;
 }
-.bairros-container:nth-child(3){
+.screen:nth-child(3){
     grid-area: areaC;
 }
-.bairros-container:nth-child(4){
+.screen:nth-child(4){
     grid-area: areaD;
 }
-.bairros-container:nth-child(5){
+.screen:nth-child(5){
     grid-area: areaE;
 }
-.bairros-container:nth-child(6){
+.screen:nth-child(6){
     grid-area: areaF;
+    transform: translate3d(30px 20px 0);
 }
 
 
