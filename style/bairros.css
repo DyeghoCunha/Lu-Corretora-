@@ -1,7 +1,15 @@
 :root{
     --primari-rgb: rgba(0,0,180,0.8);
+    --fonte-primario:'Montserrat', sans-serif;
+    --cor-fonte-primaria:rgba(189, 56, 136, 1);
 }
 
+.screen{
+  display: flex;
+  
+  justify-content: center;
+  align-content: center;
+}
 
 .bairros-container{
     display: grid;
@@ -9,15 +17,15 @@
     align-content: center;
     padding: 10px;
     width: 100%;
-    height: 500px;
+    height: 600px;
     margin-top: 100px;
     /* aspect-ratio: 1/.5; */
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "areaA areaB areaC"
-                        "areaD areaE areaF";
+    grid-template-columns: 380px 380px 380px;
+    grid-template-rows: 300px 300px;
+    /* grid-template-areas: "areaA areaB areaC"
+                        "areaD areaE areaF"; */
     
-   gap: 10px;
+   gap: 5px 5px;
    background-color: rgb(250, 102, 102);
    background-position: center;
 
@@ -25,136 +33,61 @@
 }
 
 
-.screen:nth-child(1){
+.screen{
     position: relative;
-    grid-area: areaA;
-    width:100%;
+    /* grid-area: areaA; */
+    width:355px;
     height: 100%;
     
     align-self: center;
     justify-self: center;
 
-    border:3px solid var(--primari-rgb);
+    border:3px solid var(--cor-fonte-primaria);
     
     border-radius: 1rem;
-    background-image: url(../img/bc.png);
-    animation: pan-image 20s linear infinite;
 
-}
-.screen:nth-child(2){
-    position: relative;
-    grid-area: areaB;
-    width:90%;
-    height: 90%;
-    bottom: 0;
-    align-self: center;
-    justify-self: center;
-
-    border:3px solid var(--primari-rgb);
-
-    transform: translateY(-80px);
-
-    border-radius: 1rem;
+    
     background-image: url(../img/bc.png);
     animation: pan-image 20s linear infinite;
 }
-.screen:nth-child(3){
-    position: relative;
-    grid-area: areaC;
-    width:80%;
-    height: 80%;
-    
-    align-self: center;
-    justify-self: center;
-
-    border:3px solid var(--primari-rgb);
-
-    transform: translate3d(-20px, 20px, 0);
-    
-    border-radius: 1rem;
-    background-image: url(../img/bc.png);
-    animation: pan-image 20s linear infinite;
-
-}
-.screen:nth-child(4){
-    position: relative;
-    grid-area: areaD;
-    width:75%;
-    height: 75%;
-    
-    align-self: center;
-    justify-self: center;
-
-    border:3px solid var(--primari-rgb);
-
-    transform: translate3d(20px, -20px, 0);
-    
-    border-radius: 1rem;
-    background-image: url(../img/bc.png);
-    animation: pan-image 20s linear infinite;
-}
-
-.screen:nth-child(5){
-    position: relative;
-    grid-area: areaE;
-    width:95%;
-    height: 95%;
-    
-    align-self: center;
-    justify-self: center;
-
-    border:3px solid var(--primari-rgb);
-
-    transform: translate3d(0px, -60px, 0);
-    
-    border-radius: 1rem;
-    background-image: url(../img/bc.png);
-    animation: pan-image 20s linear infinite;
-}
-.screen:nth-child(6){
-    position: relative;
-    grid-area: areaF;
-    width:70%;
-    height: 70%;
-    
-    align-self: center;
-    justify-self: center;
-
-    border:3px solid var(--primari-rgb);
-
-    transform: translate3d(-20px, -40px, 0);
-    
-    border-radius: 1rem;
-    background-image: url(../img/bc.png);
-    animation: pan-image 20s linear infinite;
-}
-
-
-
-
-
 
 .screen-overlay{
-    display: flex;
-    flex-direction: column;
+   display: flex;
+   flex-direction: column;
     
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    padding: 20%;
-    border: 2px red;
-
-    z-index: 100;
+    justify-content: center;
+    align-self: center;
+    
+    width: 90%;
+    height: 90%;
+    padding: 2%;
+    border: 2px var(--cor-fonte-primaria) solid;
+    border-radius: 1rem;
+   
+    
+   
 
 }
- .sreen-overlay > h1{
-    margin: 0;
+ .titulo-bairro{
+   
+    font-family: var(--fonte-primario);
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--cor-fonte-primaria);
+    
+    bottom:100px;
     text-align: center;
+    border: var(--cor-fonte-primaria) 1px solid;
+    margin: 10px;
+    
     position: relative;
-    color: black;
-    padding: 5% 20% 20% 1%;
+    border-radius: 1rem;
+    padding: 0.2em;
+    backdrop-filter: blur(4px);
+    
+    
 }
- .screen-overlay > p {
+.informacao-bairro {
     margin: 0;
     padding: 0;
 
