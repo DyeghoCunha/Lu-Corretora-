@@ -1,11 +1,11 @@
 
 
 .carousel-container {
-	top:30px;
+	
 	position: relative;
 	overflow: hidden;
 	width: 100vw;
-	height:50vh;
+	height:100vh;
 	/* margin: 0 auto; */
 }
 

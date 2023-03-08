@@ -30,7 +30,7 @@
 	height: 80px;
 }
 
-.fa-crow{
+/* .fa-crow{
 
 	color:var(--cor-fonte-primaria);
 }
@@ -38,7 +38,7 @@
 .fa-crow:after{
 	color:var(--cor-fonte-primaria-blur);
 	
-}
+} */
 
 .nav-logo{
 	display: flex;
@@ -277,7 +277,7 @@
 	
 	
 }
-@media only screen and (max-width: 768px) {
+
 	
 
 }

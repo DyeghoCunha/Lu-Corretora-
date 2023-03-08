@@ -4,7 +4,7 @@
 @import url(./cards.css);
 @import url(./navbar.css);
 @import url(./carrosel.css);
-/* @import url(./bairros.css);  */
+@import url(./bairros.css); 
 
 :root{
 	--fonte-primario:'Montserrat', sans-serif;
